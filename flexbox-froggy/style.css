@@ -1,0 +1,188 @@
+body {
+    background: #43a047;
+    color: #d9ecda;
+    font-family: "PT Sans", sans-serif;
+    margin: 0;
+    display: flex;
+}
+.main {
+    padding: 28px;
+    flex: 0 0 44.5%;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1 {
+    margin: 0;
+    font-family: 'Fredoka One', cursive;
+    font-size: 28px;
+}
+.graphic {
+    background: #1f5768;
+    flex: 1 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 675px;
+    height: 675px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.graphic > * {
+    margin: 35px;
+}
+.graphic > img:last-child {
+    transform: rotate(0.35turn);
+}
+.level-bar {
+    border-radius: 3px;
+    overflow: hidden;
+}
+.level-bar, .current-level {
+    display: flex;
+    align-items: center;
+}
+.level-bar > * {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.level-bar > *:hover, footer button:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+button {
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #d9ecda;
+}
+.current-level {
+    width: 160px;
+    justify-content: center;
+    border-right: 1px solid #d2e8d3;
+    border-left: 1px solid #d2e8d3;
+}
+.current-level > span:first-child {
+    font-size: 15px;
+    font-family: "PT Sans", sans-serif;
+}
+.arrow {
+    border-right: solid 11px rgba(255, 255, 255, 0.7);
+    border-top: solid 7px transparent;
+    border-bottom: solid 7px transparent;
+    width: 0;
+    height: 0;
+    display: inline-block;
+}
+.arrow.right, .arrow.left {
+    margin: 0 2px;
+}
+.right {
+    transform: rotate(0.5turn);
+}
+.down {
+    margin-left: 10px;
+    border-top: 5px solid rgba(255, 255, 255, 0.7);
+    border-right: 3px solid transparent;
+    border-left: 3px solid transparent;
+    position: relative;
+    top: 4px;
+}
+article {
+    font-size: 15px;
+}
+code {
+    font-weight: 900;
+    font-family: "Source Code Pro", monospace;
+    background: rgba(255, 255, 255, 0.2);
+    line-height: 1.5em;
+}
+ul > li {
+    margin: 1.25px;
+}
+article > p {
+    line-height: 17px;
+}
+.editor {
+    display: flex;
+    overflow: hidden;
+    border-radius: 3px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    height: 260px;
+}
+.line-number {
+    background-color: #999999;
+    color: #d5d5d5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 10px 6px;
+    font-family: "Source Code Pro", monospace;
+    font-size: 16px;
+}
+.pad {
+    background-color: #e0e0e0;
+    flex: 1;
+    padding: 10px;
+    position: relative;
+    color: #777777;
+    font-family: "Source Code Pro";
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.pad > *:nth-child(2), input {
+    position: relative;
+    left: 20px;
+}
+input {
+    border: none;
+    position: relative;
+    width: 525px;
+    left: 15px;
+    height: 20px;
+    font-family: "Source Code Pro", monospace;
+    font-size: 16px;
+}
+input:focus {
+    outline: none;
+}
+.next {
+    position: absolute;
+    bottom: 17px;
+    right: 17px;
+    cursor: pointer;
+    background-color: #d97b73;
+    color: #e0e0e0;
+    padding: 0.375em 0.75em;
+    line-height: 22px;
+    font-size: 16px;
+    font-family: "PT Sans", sans-serif;
+    border-radius: 3px;
+}
+footer > p {
+    width: max-content;
+    margin: 17px auto;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+}
+a {
+    color: rgba(255, 255, 255, 0.7);
+}
+a:hover {
+    color: #fff;
+}
+footer button {
+    padding: 3px 8px;
+    font-size: 12px;
+    font-family: "PT Sans", sans-serif;
+    border-radius: 3px;
+    cursor: pointer;
+}

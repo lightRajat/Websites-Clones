@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Rajat">
+  <meta name="description" content="A fun web game to learn CSS Flexbox">
+  <meta name="keywords" content="html, css, learning, flexbox, game">
+  <title>FlexBox Froggy</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="shortcut icon" href="img/frog-green.svg" type="image/x-icon">
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans|Fredoka+One|Source+Code+Pro' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div class="main">
+    <header>
+      <h1>FLEXBOX FROGGY</h1>
+      <div class="level-bar">
+        <button>
+          <span class="arrow left"></span>
+        </button>
+        <button class="current-level">
+          <span>Level 1 of 24</span>
+          <span class="arrow down"></span>
+        </button>
+        <button>
+          <span class="arrow right"></span>
+        </button>
+      </div>
+    </header>
+    <main>
+      <article>
+        <p>
+          Welcome to Flexbox Froggy, a game where you help Froggy and friends by writing CSS code! Guide this frog to the lilypad on the right by using the <code>justify-content</code> property, which aligns items horizontally and accepts the following values:
+        </p>
+        <ul>
+          <li><code>flex-start</code>: Items align to the left side of the container.</li>
+          <li><code>flex-end</code>: Items align to the right side of the container.</li>
+          <li><code>center</code>: Items align at the center of the container.</li>
+          <li><code>space-between</code>: Items display with equal spacing between them.</li>
+          <li><code>space-around</code>: Items display with equal spacing around them.</li>
+        </ul>
+        <p>For example, <code>justify-content: flex-end;</code> will move the frog to the right.</p>
+      </article>
+      <div class="editor">
+        <div class="line-number">
+          <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+        </div>
+        <div class="pad">
+          <span>#pond {</span>
+          <span>display: flex</span>
+          <input type="text">
+          <span>}</span>
+          <button class="next">Next</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p class="credits">
+        Flexbox Froggy is created by <a href="">Codepip</a> • <a href="">GitHub</a> • <a href="">Twitter</a> • <button>Settings</button>
+      </p>
+      <p class="grid-promo">
+        Want to learn CSS grid? Play <a href="">Grid Garden</a>.
+      </p>
+    </footer>
+  </div>
+  <div class="graphic">
+    <img src="img/frog-green.svg" alt="animated green fox" title="Cute! Isn't it?" width="95" height="95">
+    <img src="img/lilypad-green.svg" alt="animated green lilypad" width="100">
+  </div>
+</body>
+</html>

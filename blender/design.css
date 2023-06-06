@@ -1,0 +1,121 @@
+body {
+	margin: 0;
+	background: black;
+	font-family: Helvetica;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+nav {
+	height: 50px;
+	background: white;
+	padding: 0 60px 0 40px;
+	font-size: 14.4px;
+	color: #6c757d;
+}
+.logo {
+	float: left;
+	height: 100%;
+}
+.right-header {
+	float: right;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+.right-header a {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	padding: 0 14px;
+	margin: 0 2px;
+	transition: 0.3s;
+}
+.right-header a:hover {
+	color: #13b6fb;
+	box-shadow: inset 0 -3px 0 0 #13b6fb;
+}
+.right-header a:last-child {
+	background: #13b6fb;
+	padding: 10px 20px 8px 20px;
+	height: auto;
+	border-radius: 5px;
+	color: white;
+	border-bottom: solid 4px #04a7eb;
+	line-height: 12px;
+	transition: 0.3s;
+}
+.right-header a:last-child:hover {
+	background: #3BC0F8;
+}
+.right-header a:last-child svg {
+	margin-right: 20px;
+}
+img[alt="Site Logo"] {
+	height: 100%;
+	padding: 0 10px;
+}
+.banner {
+	background: url('banner.jpg') center top/100%;
+	height: 350px;
+	padding: 0 75px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.banner * {
+	margin: 0;
+	background: #081600;
+	border-radius: 4px;
+	width: fit-content;
+	color: white;
+}
+.banner h2 {
+	font-size: 48px;
+	font-weight: 400;
+	padding: 15px 12px 10px 12px;
+}
+.banner h4 {
+	font-family: sans-serif;
+	font-weight: 100;
+	letter-spacing: 0.05em;
+	padding: 10px 12px;
+}
+.link-spot {
+	height: 75px;
+	background: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #6c757d;
+}
+.link-spot a:last-child {
+	background: #13b6fb;
+	border-bottom: solid 4px #04a7eb;
+	border-radius: 5px;
+	color: white;
+	line-height: 12px;
+	display: flex;
+	align-items: center;
+	margin-left: 50px;
+	padding: 10px 45px;
+	font-size: 17px;
+	letter-spacing: 0.025em;
+	transition: 0.3s;
+}
+.link-spot a:last-child:hover {
+	background: #3BC0F8;
+}
+.link-spot a:first-child {
+	font-size: 18px;
+	letter-spacing: 0.025em;
+	transition: 0.3s;
+}
+.link-spot a:first-child:hover {
+	text-decoration: underline;
+	color: #494f54;
+}
+.link-spot a:last-child img {
+	margin-right: 15px;
+}

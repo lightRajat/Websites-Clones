@@ -1,0 +1,85 @@
+body {
+	margin: 0;
+	background: white;
+	font-family: Comic Sans MS;
+}
+header {
+	background: white;
+	height: 63px;
+	padding: 0 35px;
+	overflow: hidden;
+}
+.left-header {
+	height: 100%;
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.right-header {
+	float: right;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+header a {
+	text-decoration: none;
+	color: #3f3844;
+	font-weight: bold;
+}
+.link {
+	padding: 15px;
+	margin: 0 8px;
+	transition: 0.25s;
+}
+.link:hover {
+	color: #ff5733;
+	font-size: 125%;
+	text-shadow: 0 0 10px white, 5px 5px 4px #c2c2c2;
+	transform: rotate(-2deg);
+}
+.logo {
+	margin-right: 10px;
+}
+section {
+	background: #eeeeee;
+	padding: 50px 35px;
+	height: 275px;
+	display: flex;
+}
+aside img {
+	width: 25px;
+	height: 25px;
+	border-radius: 30%;	
+}
+aside a {
+	filter: opacity(25%);
+	transition: 0.3s;
+}
+aside a:hover {
+	filter: opacity(75%);
+}
+aside {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+aside a {
+	margin: 6px 2px;
+}
+.banner {
+	margin-left: 75px;
+	width: 650px;
+}
+.banner h4 {
+	color: #c3c3c3;
+	font-size: 0.9em;
+	margin: 0;
+}
+.banner p {
+	margin-top: 5px;
+	font-size: 30px;
+	letter-spacing: 0.01em;
+	font-weight: bold;
+	color: #3f3844;
+}
